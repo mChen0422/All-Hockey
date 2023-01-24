@@ -1,0 +1,17 @@
+body {
+    font-family: Microsoft Yahei;
+}
+
+.box {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 350px;
+    height: 550px;
+    background-color: whitesmoke;
+    border-radius: 5%;
+    box-shadow: gray 1px 1px 10px;
+    text-align: center;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
