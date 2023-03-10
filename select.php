@@ -13,12 +13,7 @@
     </style>
 </head>
 <body>
-<header>
-    <h1>vote for your favorite player</h1>
-    <a href="zhu.php" class="btn2">other</a>
-    <!--    <a href="index.php"><span class="col-xs-1">学生信息</span></a>-->
-    <!--    <a href="cha.php" class="btn2">select</a>-->
-</header>
+
 <table width=100% align="center" border="0" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#FFFFFF">
     <tr>
         <td bgcolor="#FFFFFF">
@@ -43,7 +38,7 @@
                             $page1=intval($_GET["page"]);
                         }
                         if($total1==0){
-                            echo "<div align=center>暂无球员</div>";
+                            echo "<div align=center>No Player</div>";
                         }else{
                         $pagesize1=10;
                         if($total1<$pagesize1){
@@ -111,12 +106,12 @@
                                                                             </tr>
                                                                             <tr>
 
-                                                                                <td colspan="2"><img id="i" src="photo/huo.png" width="31" height="30" style="cursor: pointer;" border="0" alt="隐藏"/><?php echo $info['praise'];?>
+                                                                                <td colspan="2"><img id="i" src="photo/huo.png" width="31" height="30" style="cursor: pointer;" border="0" alt="hide"/><?php echo $info['praise'];?>
                                                                                     <button style="margin-left:4px" onclick="window.location.href='zan.php?id=<?php echo $info['id']?>'" type="button">
-                                                                                        <img src="photo/zan.png" width="31" height="30" alt="赞">
+                                                                                        <img src="photo/zan.png" width="31" height="30" alt="thumbsup">
                                                                                         <span style="position:absolute;margin-top:6px;margin-left:2px;font-size:20px">
             <span style="position:absolute;margin-top:-2px;margin-left:6px;font-size:20px"></span>
-                                                                                    </button>(点这个标可投票)</td>
+                                                                                    </button>Vote</td>
                                                                             </tr>
                                                                         </table></td>
                                                                 </tr>
@@ -175,13 +170,13 @@
                                                                                     ?></td>
                                                                             </tr>
                                                                             <tr>
-                                                                                <td colspan="2"><img id="i" src="photo/huo.png" width="31" height="30" style="cursor: pointer;" border="0" alt="隐藏"/><?php echo $info['praise'];?>
+                                                                                <td colspan="2"><img id="i" src="photo/huo.png" width="31" height="30" style="cursor: pointer;" border="0" alt="hide"/><?php echo $info['praise'];?>
                                                                                     <button style="margin-left:4px" onclick="window.location.href='zan.php?id=<?php echo $info['id']?>'" type="button">
-                                                                                        <img src="photo/zan.png" width="31" height="30" alt="赞">
+                                                                                        <img src="photo/zan.png" width="31" height="30" alt="thumbsup">
                                                                                         <span style="position:absolute;margin-top:6px;margin-left:2px;font-size:20px">
             <span style="position:absolute;margin-top:-2px;margin-left:6px;font-size:20px"></span>
                                                                                     </button>
-                                                                                    (点这个标可投票)</td>
+                                                                                    vote</td>
                                                                             </tr>
                                                                         </table></td>
                                                                 </tr>
